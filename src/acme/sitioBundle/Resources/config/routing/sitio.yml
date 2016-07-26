@@ -1,0 +1,30 @@
+sitio:
+    path:     /
+    defaults: { _controller: "sitioBundle:sitio:index" }
+
+sitio_show:
+    path:     /{id}/show
+    defaults: { _controller: "sitioBundle:sitio:show" }
+
+sitio_new:
+    path:     /new
+    defaults: { _controller: "sitioBundle:sitio:new" }
+
+sitio_create:
+    path:     /create
+    defaults: { _controller: "sitioBundle:sitio:create" }
+    requirements: { _method: post }
+
+sitio_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "sitioBundle:sitio:edit" }
+
+sitio_update:
+    path:     /{id}/update
+    defaults: { _controller: "sitioBundle:sitio:update" }
+    requirements: { _method: post|put }
+
+sitio_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "sitioBundle:sitio:delete" }
+    requirements: { _method: post|delete }

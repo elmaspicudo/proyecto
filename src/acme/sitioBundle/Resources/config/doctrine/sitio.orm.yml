@@ -1,0 +1,23 @@
+acme\sitioBundle\Entity\sitio:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: '30'
+        dominio:
+            type: string
+            length: '30'
+        imagen:
+            type: string
+            length: '100'
+    manyToOne: 
+        theme:
+            targetEntity: acme\sitioBundle\Entity\theme
+            inversedBy: sitio            
+    lifecycleCallbacks: {  }

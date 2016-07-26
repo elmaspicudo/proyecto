@@ -1,0 +1,19 @@
+acme\sitioBundle\Entity\theme:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: '30'
+        ubicacion:
+            type: string
+            length: '50'
+        thumb:
+            type: string
+            length: '30'
+    lifecycleCallbacks: {  }

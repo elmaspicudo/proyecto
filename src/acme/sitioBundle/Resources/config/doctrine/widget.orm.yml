@@ -1,0 +1,23 @@
+acme\sitioBundle\Entity\widget:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        contenido:
+            type: string
+            length: 255
+        coordenadas:
+            type: string
+            length: '20'
+        tipo:
+            type: string
+            length: '20'
+    manyToMany: 
+        pagina:
+            targetEntity: acme\sitioBundle\Entity\pagina
+            inversedBy: widget         
+    lifecycleCallbacks: {  }

@@ -1,0 +1,4 @@
+sitio:
+    resource: "@sitioBundle/Resources/config/routing.yml"
+    prefix:   /
+

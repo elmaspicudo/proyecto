@@ -1,0 +1,30 @@
+tipowidget:
+    path:     /
+    defaults: { _controller: "sitioBundle:tipoWidget:index" }
+
+tipowidget_show:
+    path:     /{id}/show
+    defaults: { _controller: "sitioBundle:tipoWidget:show" }
+
+tipowidget_new:
+    path:     /new
+    defaults: { _controller: "sitioBundle:tipoWidget:new" }
+
+tipowidget_create:
+    path:     /create
+    defaults: { _controller: "sitioBundle:tipoWidget:create" }
+    requirements: { _method: post }
+
+tipowidget_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "sitioBundle:tipoWidget:edit" }
+
+tipowidget_update:
+    path:     /{id}/update
+    defaults: { _controller: "sitioBundle:tipoWidget:update" }
+    requirements: { _method: post|put }
+
+tipowidget_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "sitioBundle:tipoWidget:delete" }
+    requirements: { _method: post|delete }

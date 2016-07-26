@@ -1,0 +1,16 @@
+acme\sitioBundle\Entity\tipoWidget:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: '30'
+        contenido:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

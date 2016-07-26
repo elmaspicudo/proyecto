@@ -1,0 +1,20 @@
+acme\sitioBundle\Entity\blog:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: '30'
+        contenido:
+            type: string
+            length: '100'
+    manyToOne: 
+        sitio:
+            targetEntity: acme\sitioBundle\Entity\blog
+            inversedBy: blog        
+    lifecycleCallbacks: {  }

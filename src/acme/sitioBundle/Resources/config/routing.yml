@@ -1,0 +1,28 @@
+sitio_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: sitioBundle:Default:index }
+sitioBundle_sitio:
+        resource: "@sitioBundle/Resources/config/routing/sitio.yml"
+        prefix:   /sitio
+sitioBundle_pagina:
+        resource: "@sitioBundle/Resources/config/routing/pagina.yml"
+        prefix:   /pagina
+sitioBundle_blog:
+        resource: "@sitioBundle/Resources/config/routing/blog.yml"
+        prefix:   /blog
+sitioBundle_comentarios:
+        resource: "@sitioBundle/Resources/config/routing/comentarios.yml"
+        prefix:   /comentarios 
+sitioBundle_widget:
+        resource: "@sitioBundle/Resources/config/routing/widget.yml"
+        prefix:   /widget
+sitioBundle_template:
+        resource: "@sitioBundle/Resources/config/routing/template.yml"
+        prefix:   /template   
+sitioBundle_theme:
+        resource: "@sitioBundle/Resources/config/routing/theme.yml"
+        prefix:   /theme  
+sitioBundle_tipowidget:
+        resource: "@sitioBundle/Resources/config/routing/tipowidget.yml"
+        prefix:   /tipowidget
+                                      

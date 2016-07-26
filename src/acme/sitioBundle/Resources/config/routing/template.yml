@@ -1,0 +1,30 @@
+template:
+    path:     /
+    defaults: { _controller: "sitioBundle:template:index" }
+
+template_show:
+    path:     /{id}/show
+    defaults: { _controller: "sitioBundle:template:show" }
+
+template_new:
+    path:     /new
+    defaults: { _controller: "sitioBundle:template:new" }
+
+template_create:
+    path:     /create
+    defaults: { _controller: "sitioBundle:template:create" }
+    requirements: { _method: post }
+
+template_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "sitioBundle:template:edit" }
+
+template_update:
+    path:     /{id}/update
+    defaults: { _controller: "sitioBundle:template:update" }
+    requirements: { _method: post|put }
+
+template_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "sitioBundle:template:delete" }
+    requirements: { _method: post|delete }

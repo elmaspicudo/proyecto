@@ -1,0 +1,22 @@
+acme\sitioBundle\Entity\comentarios:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: '30'
+        comentario:
+            type: string
+            length: 255
+        fechaHora:
+            type: datetime
+    manyToOne: 
+        blog:
+            targetEntity: acme\sitioBundle\Entity\comentarios
+            inversedBy: blog        
+    lifecycleCallbacks: {  }
